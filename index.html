@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Hazel F.</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script type="text/javascript">
+(function() {
+  var didInit = false;
+  function initMunchkin() {
+    if(didInit === false) {
+      didInit = true;
+      Munchkin.init('354-URC-800');
+    }
+  }
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//munchkin.marketo.net/munchkin.js';
+  s.onreadystatechange = function() {
+    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+      initMunchkin();
+    }
+  };
+  s.onload = initMunchkin;
+  document.getElementsByTagName('head')[0].appendChild(s);
+})();
+</script><div class="wistia_responsive_padding" style="padding:52.71% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:80%;left:50;position:absolute;top:0;width:80%;"><iframe src="https://fast.wistia.net/embed/iframe/tfnzutjva5?seo=false&videoFoam=true" title="dance. Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
+<!-- partial -->
+  
+</body>
+</html>
